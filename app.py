@@ -5,7 +5,7 @@ import pickle
 
 app = Flask(__name__)
 
-# Load your models and preprocessor
+# Load the models and preprocessor
 with open('models/preprocessing.pkl', 'rb') as f:
     preprocessor = pickle.load(f)
 
