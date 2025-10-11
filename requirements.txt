@@ -1,0 +1,8 @@
+Flask==3.0.3
+numpy
+pandas
+scikit-learn
+xgboost
+dash
+dash-bootstrap-components
+pickle5

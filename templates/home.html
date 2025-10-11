@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🩺 Mortality Risk Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            font-family: "Segoe UI", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+        }
+        .btn-custom {
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #084298;
+        }
+        h1 {
+            color: #0d47a1;
+            font-weight: 700;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #1565c0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card p-5 text-center" style="width: 500px;">
+        <h1>🩺 Mortality Risk Prediction</h1>
+        <p class="text-muted mb-4">Enter patient data (comma-separated features)</p>
+
+        <form action="/predict_page" method="post">
+            <input type="text" class="form-control mb-3" name="features"
+                placeholder="Enter comma-separated feature values" required>
+                    <button type="submit" class="btn btn-custom w-100">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">
+                {{ prediction_text }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
