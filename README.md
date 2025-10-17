@@ -18,3 +18,15 @@ This project uses Flask and Dash to predict patient mortality risk based on heal
 
 ### Dash App
 <img width="811" height="415" alt="Image" src="https://github.com/user-attachments/assets/0ee94d28-3cdf-4136-9443-26c120b662d1" />
+
+### Tools and Technologies
+
+* Programming Language: Python
+* Libraries: pandas, numpy, scikit-learn, seaborn, matplotlib, XGBoost, LightGBM,
+TensorFlow/Keras (for neural networks), SHAP, LIME.
+* Frameworks for Deployment: Flask, FastAPI, Streamlit, Dash.
+
+## Potential Challenges
+* Data Quality: Ensuring the data is clean and representative.
+* Bias: Addressing potential biases in the data and model.
+* Interpretability: Ensuring the model is interpretable and explainable to non-technical stakeholders.
