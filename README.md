@@ -12,3 +12,4 @@ This project uses Flask and Dash to predict patient mortality risk based on heal
 - `dash_app.py`: Dash web UI
 - `models/`: Pickle files for model and preprocessor
 - `Mortality_Risk_Model.ipynb`: Notebook used for model training
+  <img width="930" height="440" alt="Image" src="https://github.com/user-attachments/assets/26351b30-636d-46bf-9b27-7d5e2de868c0" />
