@@ -18,3 +18,15 @@ This project uses Flask and Dash to predict patient mortality risk based on heal
 
 ### Dash App
 <img width="811" height="415" alt="Image" src="https://github.com/user-attachments/assets/0ee94d28-3cdf-4136-9443-26c120b662d1" />
+
+Structure of Folder
+project/
+│
+├── model/
+│   ├── classifier.pkl          ← your trained model
+│   └── preprocessing.pkl       ← (optional) your scaler/encoder
+│
+├── app.py                      ← Flask API file
+├── requirements.txt
+└── templates/
+    └── index.html              ← (optional) simple UI
